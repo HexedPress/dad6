@@ -38,3 +38,39 @@ entries:
     - title: Adjusting for magic
       url: /dad6_extraordinary.html
       output: web
+
+  - title: Wilderness
+    output: web
+    folderitems:
+
+    - title: Units of measure
+      url: /dad6w_units.html
+      output: web
+
+    - title: Expedition actions
+      url: /dad6w_actions.html
+      output: web
+    
+    - title: Terrain attributes (TRAPS)
+      url: /dad6w_attributes.html
+      output: web
+    
+    - title: TRAPS example
+      url: /dad6w_example.html
+      output: web
+
+    - title: TRAPS in action
+      url: /dad6w_activities.html
+      output: web
+    
+    - title: Wandering creature encounters
+      url: /dad6w_creatures.html
+      output: web
+    
+    - title: Understanding peril
+      url: /dad6w_peril.html
+      output: web
+
+    - title: An expedition scenario example
+      url: /dad6w_example2.html
+      output: web
