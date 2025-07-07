@@ -74,3 +74,23 @@ entries:
     - title: An expedition scenario example
       url: /dad6w_example2.html
       output: web
+
+  - title: Skills
+    output: web
+    folderitems:
+
+    - title: Basics
+      url: /dad6s_basics.html
+      output: web
+    
+    - title: A sample skill list
+      url: /dad6s_sample.html
+      output: web
+    
+    - title: Magic effects
+      url: /dad6s_magic.html
+      output: web
+    
+    - title: Example thief class
+      url: /dad6s_example.html
+      output: web
