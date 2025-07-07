@@ -4,7 +4,7 @@ keywords: homepage
 tags: [dad6_core]
 sidebar: dad6_sidebar
 permalink: index.html
-summary: Thid is the core framework for the Do Anything D6 (DAD6) tabletop role-playing system.
+summary: This is the core framework for the Do Anything D6 (DAD6) tabletop role-playing system.
 ---
 
 ## What is Do Anything D6?
