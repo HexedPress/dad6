@@ -1,0 +1,40 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Do AnyThing D6
+  version: 1.0
+  folders:
+
+  - title: Core
+    output: web
+    folderitems:
+
+    - title: The basics
+      url: /index.html
+      output: web
+      type: homepage
+
+    - title: Increasing difficulties
+      url: /dad6_increasing_difficulty.html
+      output: web
+
+    - title: Multi-stage challenges
+      url: /dad6_multi_stage.html
+      output: web
+    
+    - title: Stunts
+      url: /dad6_stunts.html
+      output: web
+
+    - title: Adjusting for level and skill
+      url: /dad6_skill.html
+      output: web
+    
+    - title: Adjusting for attributes
+      url: /dad6_attributes.html
+      output: web
+
+    - title: Adjusting for magic
+      url: /dad6_extraordinary.html
+      output: web

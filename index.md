@@ -1,414 +1,150 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
-keywords: sample homepage
-tags: [getting_started]
-sidebar: mydoc_sidebar
+title: "The basics of Do Anything D6"
+keywords: homepage
+tags: [dad6_core]
+sidebar: dad6_sidebar
 permalink: index.html
-summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
+summary: This is an introduction to the Do Anything D6 (DAD6) tabletop role-playing system.
 ---
 
-{% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
+## What is Do Anything D6?
 
-## Build the Theme
+Do Anything D6 (let’s call it DAD6 for short) is a generic, standardized system of running challenges in any tabletop roleplaying game. It is based on the *x-in-6* system from classic fantasy roleplaying games of the ‘70s and ‘80s. It is designed to be **plug-and-play**: drop it into your system of choice whenever you need or want to. It is self-contained and relies purely on six-sided dice.
 
-Follow these instructions to build the theme.
+## How does it work?
 
-### 1. Download the theme
+Whenever a Character (ie. player-character or other creature) undertakes a challenge that poses a significant and interesting struggle to complete, use this system to adjudicate that effort and determine its success or failure.
 
-First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
+At its simplest, DAD6 works exactly like a standardized version of the classic x-in-6 mechanic. A die is rolled and compared to a target number. If it matches or exceeds that target, it counts as a positive result. If not, it’s a negative result.
 
-### 2. Install Jekyll
+### Set the terms
 
-If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
+To resolve a challenge, whether using DAD6 or another mechanic, it is vital that both the referee and the Character share an understanding of the potential **banes** (the risks or complications that might arise through failure) and the **prize** if the attempt is successful. Use the questions below as prompts to shape the parameters of the challenge.
 
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
+#### What is the challenge?
 
-### 3. Install Bundler
+Simple question, right? Well, maybe, but putting the actual task into words, and agreeing on those terms, will crystallize exactly what is being attempted. If the challenge is sprawling, should it be broken down into more atomic tasks that are resolved independently? (see “Break down extended challenges into stages,” below, for a method
+to handle that.) Does the challenge represent a significant and interesting enough struggle to warrant rolling dice?
 
-In case you haven't installed Bundler, install it:
+#### What does success look like?
 
-```
-gem install bundler
-```
+What is the Character’s goal? Why are they attempting this task? It may be obvious or it might not be but, as with stating the terms of the actual challenge, agreeing on the challenge’s **prize** not only defines success, for all parties, but it shapes what failure, and the complications that arise from that, look like.
 
-You'll want [Bundler](http://bundler.io/) to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.
+#### What does failure look like?
 
-### 4. Option 1: Build the Theme (*without* the github-pages gem) {#option1}
+Banes, the consequences of failing a challenge, are immensely important. Understanding and agreeing on those potential banes is vital. A Character cannot make an informed decision about whether or not to face a challenge if they do not understand something about the stakes. What do they have to lose? If we’re going to roll dice, the answer should probably be something. And they should have some idea of what that could be.
 
-Use this option if you're not planning to publish your Jekyll site using [Github Pages](https://pages.github.com/).
+Here are some broad categories of banes to act as starting points for discussion (when in doubt, roll a die to find out!):
 
-Bundler's Gemfile specifies how project dependencies are managed. Although this project includes a Gemfile, this theme doesn't have any dependencies beyond core Jekyll. The Gemfile is used to list gems needed for publishing on Github Pages. **If you're not planning to have Github Pages build your Jekyll project, delete these two files from the theme's root directory:**
+| 1d6 | Bane                      |
+| --- | ------------------------- |
+| 1   | Enemies close in          |
+| 2   | Collateral damage         |
+| 3   | Injury                    |
+| 4   | Something breaks          |
+| 5   | The horizon darkens       |
+| 6   | What is this new devilry? |
 
-* Gemfile
-* Gemfile.lock
+Enemies close in
+: A threat gains ground on the Character; if there is no existing threat, create a new one and put it in motion!
 
-If you've never run Jekyll on your computer (you can check with `jekyll --version`), you may need to install the jekyll gem:
+Collateral damage
+: Allies of the Character suffer damage of some kind, be it bodily harm, stress, exhaustion or something else.
 
-```
-gem install jekyll
-```
+Injury
+: The Character suffers damage of some kind, be it bodily harm, stress, exhaustion or something else.
 
-Now run jekyll serve (first change directories (`cd`) to where you downloaded the project):
+Something breaks
+: A tool or other piece of equipment breaks; if nothing obvious fits the bill, roll a die to see what gets crushed, smashed, horribly bent, or otherwise mangled!
 
-```
-jekyll serve
-```
+The horizon darkens
+: Whatever has gone wrong here has increased the difficulty of operations going forward.
 
-### 4. Option 2: Build the Theme (*with* the github-pages gem) {#option2}
+What is this new devilry?
+: As a consequence of this failed challenge, a new obstacle has appeared that needs to be overcome.
 
-If you *are* in fact publishing on Github Pages, leave the Gemfile and Gemfile.lock files in the theme.The Gemfile tells Jekyll to use the github-pages gem. **However, note that you cannot use the normal `jekyll serve` command with this gem due to dependency conflicts between the latest version of Jekyll and Github Pages** (which are noted [briefly here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)).
+### Grab some dice
 
-You need Bundler to resolve these dependency conflicts. Use Bundler to install all the needed Ruby gems:
+DAD6 uses six-sided dice. A few of them. Okay, *a lot* of them. In technical parlance, their called **dice pools** (I will use this term fairly frequently). Unless you are new to the hobby, you probably have plenty but, if not, raid that old box of Yahtzee from the closet and toss them into a bowl on the table. Whenever a die is rolled in DAD6, a success, called hereafter a **boon**, is a result, after modifiers, of six or greater. Always. No flip-flopping from sometimes wanting high numbers and sometimes wanting low numbers (I hate that). **The target number is always six**.
 
-```
-bundle update
-```
+#### Characters prime their dice pool
 
-Then *always* use this command to build Jekyll:
+A first level (or equivalent, if you’re not using levels) Character begins with three dice. I like to think of them as one for mind, one for body, and one for their vocation (class or equivalent, if you’re not using classes). Characters can gain more dice, as we’ll see below, but this is the foundation of their dice pool.
 
-```
-bundle exec jekyll serve
-```
+### Characters build their dice pool to mitigate challenges
 
-If you want to shorten this long command, you can put this code in a file such as jekyll.sh (on a Mac) and then simply type `. jekyll.sh` to build Jekyll.
+The base chance to overcome a mundane challenge is roughly 42%. Slightly below even odds. Keep in mind that we’re generally looking to model **struggles with interesting and significant consequences**, so if those odds seem low for the task at hand, it might not be worthy of a challenge.
 
-## Running the site in Docker
+With that said, Characters can improve their odds by adding more dice to their dice pool. How do they acquire these dice? I’m glad you asked! Characters increase their die pools by:
 
-You can also use Docker to directly build and run the site on your local machine. Just clone the repo and run the following from your working dir:
-```
-docker-compose build --no-cache && docker-compose up
-```
-The site should now be running at [http://localhost:4000/](http://localhost:4000/).
+- gaining class levels (or equivalents), 1 die per level;
+- using tools, 1 die per tool;
+- receiving help from other Characters, 1 die per helper;
+- taking advantage of the environment, 1 die per advantage; or,
+- spending extra time, 1 die for each doubling of time spent.
 
-This is perhaps the easiest way to see how your site would actually look.
+This is not meant to be an exhaustive list. If an advantage can reasonably be gleaned from some angle, toss a die into the Character’s dice pool. Every eight dice in a Character’s pool can be traded in for a boon. The referee, of course, is the final arbiter of what can or can’t be used to mitigate a particular challenge. It should be a conversation so talk it through!
 
-## Configure the sidebar
+### Roll the Dice
 
-There are several products in this theme. Each product uses a different sidebar. This is the essence of what makes this theme unique -- different sidebars for different product documentation. The idea is that when users are reading documentation for a specific product, the sidebar navigation should be specific to that product. (You can read more of my thoughts on why multiple sidebars are important in this [blog post](http://idratherbewriting.com/2016/03/23/release-of-documentation-theme-for-jekyll-50/).)
+The parameters of the challenge have been set and the Character has mitigated those circumstances as much as they can. What’s next? Let’s roll the dice and see what happens!
 
-The top navigation usually remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.
+#### Count the boons
 
-In each page's frontmatter, you must specify the sidebar you want that page to use. Here's an example of the page frontmatter showing the sidebar property:
+Each of the dice that results in a six is a boon, a success. Boons can be used for several
+things but the primary purpose is, as you can probably surmise, to overcome the
+challenge. For a basic challenge, one boon is all it takes to succeed. Things can get more
+complicated than this but we’ll talk about that in the Advanced section, below.
 
-<pre>
----
-title: Alerts
-tags: [formatting]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
-<span class="red">sidebar: mydoc_sidebar</span>
-permalink: mydoc_alerts
----
-</pre>
+### Manage success
 
-The `sidebar: mydoc_sidebar` refers to the \_data/sidebars/mydoc_sidebar.yml file.
+If the Character succeeds at the challenge, they win the prize! Pretty simple, right?
 
-Note that your sidebar can only have 2 levels (expand the **Tag archives** option to see an example of the second level). Given that each product has its own sidebar, this depth should be sufficient (it's really like 3 levels). Deeper nesting goes against usability recommendations.
+#### Characters can spend excess boons
 
-You can optionally turn off the sidebar on any page (e.g. landing pages). To turn off the sidebar for a page, you should set the page frontmatter tag as `hide_sidebar: true`.
-
-If you don't declare a sidebar, the `home_sidebar` file gets used as the default because this is the default specified in the config file:
-
-```yaml
--
-  scope:
-    path: ""
-    type: "pages"
-  values:
-    layout: "page"
-    comments: true
-    search: true
-    sidebar: home_sidebar
-    topnav: topnav
-```
-
-If you want to set different sidebar defaults based on different folders for your pages, specify your defaults like this:
-
-```
--
-  scope:
-    path: "pages/mydoc"
-    type: "pages"
-  values:
-    layout: "page"
-    comments: true
-    search: true
-    sidebar: mydoc_sidebar
-    topnav: topnav
-```
-
-This would load the `mydoc_sidebar` for each file in **pages/mydoc**. You could set different defaults for different path scopes.
-
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation].
-
-## Top navigation
-
-The top navigation works just like the sidebar. You can specify which topnav data file should load by adding a `topnav` property in your page, like this:
-
-```yaml
-topnav: topnav
-```
-
-Here the topnav refers to the `_data/topnav.yml` file.
-
-Because most topnav options will be the same, the `_config.yml` file specifies the topnav file as a default:
-
-```yaml
--
-  scope:
-    path: ""
-    type: "pages"
-  values:
-    layout: "page"
-    comments: true
-    search: true
-    sidebar: home_sidebar
-    topnav: topnav
-```
-
-## Sidebar syntax
-
-The sidebar data file uses a specific YAML syntax that you must follow. Follow the sample pattern shown in the theme, specically looking at `mydoc_sidebar.yml` as an example: Here's a code sample showing all levels:
-
-```yaml
-entries:
-- title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
-  folders:
-  - title: Overview
-    output: web, pdf
-    folderitems:
-
-    - title: Get started
-      url: /index.html
-      output: web, pdf
-      type: homepage
-
-    - title: Introduction
-      url: /mydoc_introduction.html
-      output: web, pdf
-
-  - title: Release Notes
-    output: web, pdf
-    folderitems:
-
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
-      output: web, pdf
-
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
-
-  - title: Tag archives
-    output: web
-    folderitems:
-
-    - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
-      output: web
-
-      subfolders:
-      - title: Tag archive pages
-        output: web
-        subfolderitems:
+If a Character achieves more boons than required to defeat the challenge, what do they do with the leftovers? There are are a few options, actually:
 
-        - title: Formatting pages
-          url: /tag_formatting.html
-          output: web
-
-        - title: Navigation pages
-          url: /tag_navigation.html
-          output: web
-
-        - title: Content types pages
-          url: /tag_content_types.html
-          output: web
-```
-
-Each `folder` or `subfolder` must contain a `title` and `output` property. Each `folderitem` or `subfolderitem` must contain a `title`, `url`, and `output` property.
-
-The two outputs available are `web` and `pdf`. (Even if you aren't publishing PDF, you still need to specify `output: web`).
-
-The YAML syntax depends on exact spacing, so make sure you follow the pattern shown in the sample sidebars. See my [YAML tutorial](mydoc_yaml_tutorial) for more details about how YAML works.
-
-{% include note.html content="If you have just one character of spacing off, Jekyll won't build due to the YAML syntax error. You'll see an error message in your console that says \"Error ... did not find expected key while parsing a block mapping at line 22 column 5. Error: Run jekyll build --trace for more information.\" If you encounter this, it usually refers to incorrect indentation or spacing in the YAML file. See the example mydoc_sidebar.yml file to see where your formatting went wrong." %}
-
-Each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level. If you need a hierarchy that has a folder that contains other folders and no loose topics, use a blank `-` item like this:
+- Pay down banes;
+- Reduce time (though never to less than the minimum time required); or,
+- Roll them forward to apply to the next challenge.
 
-```yaml
-entries:
-- title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
-  folders:
-  - title: Overview
-    output: web, pdf
-    folderitems:
+Pay down banes
+: The Character excelled at their task enough to hold any banes at bay or even push them back:
 
-    -
+- If any enemies are closing in, the Character opens a gap;
+- If the horizon had darkened, the Character finds a silver lining;
+- If there is some new devilry, the Character finds a remedy.
 
-  - title: Release Notes
-    output: web, pdf
-    folderitems:
+Reduce time spent
+: The Character was surprisingly efficient at work and so has cut down on the time spent on task; sorry, but the time can never be reduced below the minimum required, everything’s got limits.
 
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
-      output: web, pdf
+Roll them forward
+: Let’s call it momentum— the Character is able to ride the wave from this task into the next one. *Surf’s up!*
 
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
+### Judge Failure
 
-  - title: Installation
-    output: web, pdf
-    folderitems:
+If a 6 is a success, then the further the result is from 6, the greater the failure. A result of 1, or less, would obviously be the worst sort of failure.
 
-    - title: About Ruby, Gems, Bundler, etc.
-      url: /mydoc_about_ruby_gems_etc.html
-      output: web, pdf
+| Margin of Failure | Meaning  |
+| ----------------- | -------- |
+| 1                 | Almost!  |
+| 2                 | Close!   |
+| 3                 | A miss!  |
+| 4                 | Lookout! |
+| 5 or more         | DUCK!    |
 
-    - title: Install Jekyll on Mac
-      url: /mydoc_install_jekyll_on_mac.html
-      output: web, pdf
+If more than one die is rolled, use the closest roll to determine the scope of failure. What this failure looks like, precisely, will be entirely up to the referee but it should align with the potential banes that have been agreed upon (see, “[What does failure look like?](#what-does-failure-look-like)” above.)
 
-    - title: Install Jekyll on Windows
-      url: /mydoc_install_jekyll_on_windows.html
-      output: web, pdf
-```
+#### Sell Boons
 
-To accommodate the title page and table of contents in PDF outputs, each product sidebar must list these pages before any other:
+A Character faced a challenge, lost, and incurred a bane. What now? One option is to just proceed from the failure: write it off and move on. Another option is to negotiate with the player to turn that potential failure into a success, but at a cost. Isn’t this letting the player off the hook? Why would we want to do this?
 
-```yaml
-- title:
-  output: pdf
-  type: frontmatter
-  folderitems:
-  - title:
-    url: /titlepage
-    output: pdf
-    type: frontmatter
-  - title:
-    url: /tocpage
-    output: pdf
-    type: frontmatter
-```
+Here I must confess the joy that I experience, as a referee, in raising the stakes. Allowing players to buy boons puts them in position to, by their own hands and wills, hoist themselves on their own petards. With each transaction, another bane is added to the board or advanced towards a terrible conclusion. This creeping doom is, to me, infinitely more fun, than the sudden and complete stop, jarring as it may be, of a simple failure.
 
-Leave the output as `output: pdf` for these frontmatter pages so that they don't appear in the web output.
+To buy a boon, a Character must accept a bane (see “[What does failure look like?](#what-does-failure-look-like)”, above, for some general and generic categories). If a bane is already in play, activate it and progress it in whichever way is the most detrimental to the Character. If not, create a new bane and put it in play.
 
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation] and [YAML tutorial][mydoc_yaml_tutorial].
+While selling boons to Characters will soften the blow of a single failed challenge, it will both make for more heroic actions (escaping by the skin of their teeth!) and complicate the adventure in deliciously unforeseen ways.
 
-## Comments
-
-The theme integrates [Commento.io](https://commento.io/) for comments below pages and posts. (This commenting service doesn't inject controversial tracking ads like Disqus does.) You will need to Commento.io account + plan ($5/month) to authorize Commento with your domain (no other configuration should be required). If you don't want comments, in the \_config.yml file, change the `comments: true` properties (under `defaults`) to `comments: false` in every instance. Then in the commento.html include file (inside \_includes), the `{% raw %}{% unless page.comments == false %} ... {% endunless %}{% endraw %}` logic will not insert the Commentio form.
-
-## Relative links and offline viewing
-
-This theme uses relative links throughout so that you can view the site offline and not worry about which server or directory you're hosting it. It's common with tech docs to push content to an internal server for review prior to pushing the content to an external server for publication. Because of the need for seamless transferrence from one host to another, the site has to use relative links.
-
-To view pages locally on your machine (without the Jekyll preview server), they need to have the `.html` extension. The `permalink` property in the page's frontmatter (without surrounding slashes) is what pushes the files into the root directory when the site builds.
-
-## Page frontmatter
-
-When you write pages, include these same frontmatter properties with each page:
-
-```yaml
----
-title: "Some title"
-tags: [sample1, sample2]
-keywords: keyword1, keyword2, keyword3
-last_updated: Month day, year
-summary: "optional summary here"
-sidebar: sidebarname
-permalink: filename.html
----
-```
-
-(You will customize the values for each of these properties, of course.)
-
-For titles, surrounding the title in quotes is optional, but if you have a colon in the title, you must surround the title with quotation marks. If you have a quotation mark inside the title, escape it first with a backlash `\`.
-
-Values for `keywords` get populated into the metadata of the page for SEO.
-
-Values for `tags` must be defined in your \_data/tags.yml list. You also need a corresponding tag file inside the tags folder pages/tags/ that follows the same pattern as the other tag files shown in the tags folder. (Jekyll won't auto-create these tag files.)
-
-If you don't want the mini-TOC to show on a page (such as for the homepage or landing pages), add `toc: false` in the frontmatter.
-
-The `permalink` value should be the same as your filename and include the ".html" file extension.
-
-For more detail, see [Pages][mydoc_pages].
-
-## Where to store your documentation topics
-
-You can store your files for each product inside subfolders following the pattern shown in the theme. For example, product1, product2, etc, can be stored in their own subfolders inside the \_pages directory. Inside \_pages, you can store your topics inside sub-subfolders or sub-sub-folders to your heart's content. When Jekyll builds your site, it will pull the topics into the root directory and use the permalink for the URL.
-
-Note that product1, product2, and mydoc are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
-
-For more information, see [Pages][mydoc_pages] and [Posts][mydoc_posts].
-
-## Configure the top navigation
-
-The top navigation bar's menu items are set through the \_data/topnav.yml file. Use the top navigation bar to provide links for navigating from one product to another, or to navigate to external resources.
-
-For external URLs, use `external_url` in the item property, as shown in the example topnav.yml file. For internal links, use `url` the same was you do in the sidebar data files.
-
-Note that the topnav has two sections: `topnav` and `topnav_dropdowns`. The topnav section contains single links, while the `topnav_dropdowns` section contains dropdown menus. The two sections are independent of each other.
-
-## Generating PDF
-
-If you want to generate PDF, you'll need a license for [Prince XML](http://www.princexml.com/). You will also need to [install Prince](http://www.princexml.com/doc/installing/).  You can generate PDFs by product (but not for every product on the site combined together into one massive PDF). Prince will work even without a license, but it will imprint a small Prince image on the first page, and you're supposed to buy the license to use it.
-
-If you're on Windows, install [Git Bash client](https://git-for-windows.github.io/) rather than using the default Windows command prompt.
-
-Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
-
-See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
-
-## Blogs / News
-
-For blog posts, create your markdown files in the \_posts folder following the sample formats. Post file names always begin with the date (YYYY-MM-DD-title).
-
-The news/news.html file displays the posts, and the news_archive.html file shows a yearly history of posts. In documentation, you might use the news to highlight product features outside of your documentation, or to provide release notes and other updates.
-
-See [Posts][mydoc_posts] for more information.
-
-## Markdown
-
-This theme uses [kramdown markdown](http://kramdown.gettalong.org/). kramdown is similar to Github-flavored Markdown, except that when you have text that intercepts list items, the spacing of the intercepting text must align with the spacing of the first character after the space of a numbered list item. Basically, with your list item numbering, use two spaces after the dot in the number, like this:
-
-```
-1.  First item
-2.  Second item
-3.  Third item
-```
-
-When you want to insert paragraphs, notes, code snippets, or other matter in between the list items, use four spaces to indent. The four spaces will line up with the first letter of the list item (the <b>F</b>irst or <b>S</b>econd or <b>T</b>hird).
-
-```
-1.  First item
-
-    ```
-    alert("hello");
-    ```
-
-2.  Second item
-
-    Some pig!
-
-3.  Third item
-```
-
-See the topics under "Formatting" in the sidebar for more information.
-
-## Automated links
-
-If you want to use an automated system for managing links, see [Automated Links][mydoc_hyperlinks.html#automatedlinks]. This approach automatically creates a list of Markdown references to simplify linking.
-
-## Other instructions
-
-The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.
+Finally, context is king. If the circumstances of the challenge dictate that it is all or nothing, so be it! Whether it’s to the death or to the pain, sometimes you just can’t buy your way off the hook.
 
 {% include links.html %}
