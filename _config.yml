@@ -1,2 +1,68 @@
 url: hexedpress.github.io
 baseurl: /dad6
+
+github_editme_path: HexedPress/dad6/blob/gh-pages/
+
+exclude:
+  - .idea/
+  - .gitignore
+  - vendor
+
+feedback_disable: true
+
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: dad6_sidebar
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      search: true
+      tooltip: true
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false
+      search: true
+      sidebar: dad6_sidebar
+      topnav: topnav
+
+sidebars:
+- dad6_sidebar
+
+topnav_title: Do Anything D6 Rules Repository
+
+site_title: Do Anything D6 Rules Repository
+
+company_name: Copyright 2025 Hexed Press LLC
+
+description: "A repository of rules for the Do Anything D6 family of tabletop role-playing games."
+
+github: [metadata]
