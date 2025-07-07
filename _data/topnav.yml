@@ -5,6 +5,8 @@ topnav:
   items:
     - title: Hexed Press
       external_url: https://hexed.press
+    - title: Patreon
+      external_url: https://www.patreon.com/hexedpress
     - title: YouTube
       external_url: https://www.youtube.com/@hexedpress
 
