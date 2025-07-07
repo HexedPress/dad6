@@ -1,10 +1,10 @@
 ---
-title: "The basics of Do Anything D6"
+title: "Do Anything D6 Core Rules"
 keywords: homepage
 tags: [dad6_core]
 sidebar: dad6_sidebar
 permalink: index.html
-summary: This is an introduction to the Do Anything D6 (DAD6) tabletop role-playing system.
+summary: These are the core rules for the Do Anything D6 (DAD6) tabletop role-playing system.
 ---
 
 ## What is Do Anything D6?
