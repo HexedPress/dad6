@@ -10,6 +10,8 @@ exclude:
 
 feedback_disable: true
 
+github_editme_path: false
+
 highlighter: rouge
 
 markdown: kramdown
@@ -56,8 +58,9 @@ defaults:
 
 sidebars:
 - dad6_sidebar
+- troupe_sidebar
 
-topnav_title: Do Anything D6 Rules Repository
+topnav_title: Do Anything D6 Repository
 
 site_title: Do Anything D6 Rules Repository
 
