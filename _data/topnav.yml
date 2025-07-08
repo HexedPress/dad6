@@ -14,6 +14,10 @@ topnav:
 topnav_dropdowns:
 - title: dropdowns
   folders:
+    - title: Games
+      folderitems:
+        - title: Troupe
+          url: /troupe_overview.html
     - title: Buy
       folderitems:
         - title: Itch.io
