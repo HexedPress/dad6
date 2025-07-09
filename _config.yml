@@ -59,6 +59,7 @@ defaults:
 sidebars:
 - dad6_sidebar
 - troupe_sidebar
+- doomsday_sidebar
 
 topnav_title: Do Anything D6 Repository
 

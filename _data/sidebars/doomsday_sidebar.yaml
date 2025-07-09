@@ -1,0 +1,51 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Troupe Doomsday
+  version: 1.0
+  folders:
+  - title: Core rules
+    output: web
+    folderitems:
+    - title: Overview
+      url: /trouped_overview.html
+      output: web
+    - title: Basic concepts
+      url: /trouped_basics.html
+      output: web
+    - title: Facing challenges
+      url: /trouped_challenges.html
+      output: web
+
+  - title: Callings/Classes
+    output: web
+    folderitems:
+    - title: Overview
+      url: /trouped_callings.html
+      output: web
+    - title: The Bounder
+      url: /trouped_bounder.html
+      output: web
+    - title: The Delver
+      url: /trouped_delver.html
+      output: web
+    - title: The Sorcerer
+      url: /trouped_sorcerer.html
+      output: web
+    - title: The Warrior
+      url: /trouped_warrior.html
+      output: web
+
+  - title: About Troupe
+    output: web
+    folderitems:
+    - title: Overview
+      url: /troupe_overview.html
+      output: web
+  - title: About Do Anything D6
+    output: web
+    folderitems:
+    - title: The basics
+      url: /index.html
+      output: web
