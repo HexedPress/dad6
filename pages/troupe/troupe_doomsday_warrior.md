@@ -5,8 +5,7 @@ last_updated: Jul 7, 2025
 tags: [troupe_doomsday, calling]
 summary: "The Warrior is a calling forged for battle in \"Troupe: Doomsday\"."
 sidebar: doomsday_sidebar
-permalink: trouped_warrior.html
-folder: trouped
+permalink: troupe_doomsday_warrior.html
 ---
 
 ## At a glance
@@ -29,4 +28,4 @@ Roll 1d6:
 | 3-4 | 3d6 silver pieces, a spear, a gambeson, 3 x rations, and a keepsake |
 | 5-6 | 3d6 silver pieces, a sword, a jerkin, a bedroll, and a keepsake     |
 
-{% include links.html %}
+{% include_relative _includes/troupe_footer.md %}

@@ -5,27 +5,33 @@ last_updated: Jul 7, 2025
 tags: [troupe_doomsday]
 summary: "An overview of character classes, called <em>Callings</em>, in \"Troupe: Doomsday\"."
 sidebar: doomsday_sidebar
-permalink: trouped_callings.html
-folder: trouped
+permalink: troupe_doomsday_callings.html
 ---
 
 Character classes in *Troupe: Doomsday* are referred to as **Callings**.
 
-## The core callings
+## Baic Callings
 
-There are three basic callings: [Bounder](trouped_bounder.html), [Delver](trouped_delver.html), [Sorcerer](trouped_sorcerer.html), and [Warrior](trouped_warrior.html).
+There are four basic callings:
+
+- [Bounder](troupe_doomsday_bounder.html), a wilderness-focused calling;
+- [Delver](troupe_doomsday_delver.html), a dungeon-focused calling;
+- [Sorcerer](troupe_doomsday_sorcerer.html), a magic-focused calling; and
+- [Warrior](troupe_doomsday_warrior.html), a battle-focused calling.
 
 ### Edges and Talents
 
-Each calling has an **edge** and a **talent**.
+Each calling has an **Edge** and a **Talent**.
 
 Edges
 : Physical attributes that the calling is gifted with, such as strength or speed; when a Character uses their class's *edge* in a Challenge, they gain one die.
 
 Talents
-: a set of related crafts (skills) and lores (knowledge) that the calling excels at; when a Character uses their class's *talent* in a Challenge, they gain a bonus to all their dice.
+: A set of related crafts (skills) and lores (knowledge) that the calling excels at; when a Character uses their class's *talent* in a Challenge, they gain a bonus to all their dice.
 
-## Progression
+## Level Progression
+
+Callings progress through levels. With each level, a Character becomes more powerful and more skilled in their chosen field.
 
 | Level | Hero Dice | Talent Bonus |
 | ----- | --------- | ------------ |
@@ -40,4 +46,6 @@ Talents
 | 9     | 9         | +3           |
 | 10    | 10        | +3           |
 
-{% include links.html %}
+{% include tip.html content="Read about [Magic](troupe_doomsday_magic.html) next." type="primary" %}
+
+{% include_relative _includes/troupe_footer.md %}

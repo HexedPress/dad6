@@ -9,32 +9,80 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /trouped_overview.html
+      url: /troupe_doomsday_overview.html
       output: web
     - title: Basic concepts
-      url: /trouped_basics.html
+      url: /troupe_doomsday_basics.html
       output: web
-    - title: Facing challenges
-      url: /trouped_challenges.html
+    - title: Challenges
+      url: /troupe_doomsday_challenges.html
+      output: web
+    - title: Strain
+      url: /troupe_doomsday_strain.html
+      output: web
+    - title: Doom Dice
+      url: /troupe_doomsday_doom.html
       output: web
 
-  - title: Callings/Classes
+  - title: Creating Characters
     output: web
     folderitems:
     - title: Overview
-      url: /trouped_callings.html
+      url: /troupe_doomsday_characters.html
+      output: web
+    - title: Virtues
+      url: /troupe_doomsday_virtues.html
+      output: web
+    - title: Vices
+      url: /troupe_doomsday_vices.html
+      output: web
+
+  - title: Callings
+    output: web
+    folderitems:
+    - title: Overview
+      url: /troupe_doomsday_callings.html
       output: web
     - title: The Bounder
-      url: /trouped_bounder.html
+      url: /troupe_doomsday_bounder.html
       output: web
     - title: The Delver
-      url: /trouped_delver.html
+      url: /troupe_doomsday_delver.html
       output: web
     - title: The Sorcerer
-      url: /trouped_sorcerer.html
+      url: /troupe_doomsday_sorcerer.html
       output: web
     - title: The Warrior
-      url: /trouped_warrior.html
+      url: /troupe_doomsday_warrior.html
+      output: web
+
+  - title: Magic
+    output: web
+    folderitems:
+    - title: Overview
+      url: /troupe_doomsday_magic.html
+      output: web
+    - title: Spell effects
+      url: /troupe_doomsday_magic_effects.html
+      output: web
+    - title: Elemental magic
+      url: /troupe_doomsday_magic_elemental.html
+      output: web
+    - title: Enchantment
+      url: /troupe_doomsday_magic_enchantment.html
+      output: web
+    - title: Mimicry
+      url: /troupe_doomsday_magic_mimicry.html
+      output: web
+    - title: Sympathetic components
+      url: /troupe_doomsday_magic_sympathetic.html
+      output: web
+
+  - title: The Setting
+    output: web
+    folderitems:
+    - title: Doomsday
+      url: /troupe_doomsday_setting.html
       output: web
 
   - title: About Troupe

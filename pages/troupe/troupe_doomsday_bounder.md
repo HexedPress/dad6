@@ -5,8 +5,8 @@ last_updated: Jul 7, 2025
 tags: [troupe_doomsday, calling]
 summary: "The Bounder is a wilderness survivor calling in \"Troupe: Doomsday\"."
 sidebar: doomsday_sidebar
-permalink: trouped_bounder.html
-folder: trouped
+permalink: troupe_doomsday_bounder.html
+folder: troupe
 ---
 
 ## At a glance
@@ -29,4 +29,4 @@ Roll 1d6:
 | 3-4 | 2d6 silver pieces, a spear, a tinder box, a bedroll, and a keepsake      |
 | 5-6 | 2d6 silver pieces, a bow, a backpack, 1 x Witch's Butter, and a keepsake |
 
-{% include links.html %}
+{% include_relative _includes/troupe_footer.md %}

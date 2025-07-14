@@ -5,8 +5,7 @@ last_updated: Jul 7, 2025
 tags: [troupe_doomsday, calling]
 summary: "The Delver is an investigator calling in \"Troupe: Doomsday\"."
 sidebar: doomsday_sidebar
-permalink: trouped_delver.html
-folder: trouped
+permalink: troupe_doomsday_delver.html
 ---
 
 ## At a glance
@@ -29,4 +28,4 @@ Roll 1d6:
 | 3-4 | 2d6 silver pieces, a staff, a mirror, a flask of oil, and a keepsake |
 | 5-6 | 2d6 silver pieces, a club, a sack, 3 x candles, and a keepsake       |
 
-{% include links.html %}
+{% include_relative _includes/troupe_footer.md %}

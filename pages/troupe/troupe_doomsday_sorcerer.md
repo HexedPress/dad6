@@ -5,8 +5,7 @@ last_updated: Jul 7, 2025
 tags: [troupe_doomsday, calling]
 summary: "The Sorcerer is a magic-manipulating calling in \"Troupe: Doomsday\"."
 sidebar: doomsday_sidebar
-permalink: trouped_sorcerer.html
-folder: trouped
+permalink: troupe_doomsday_sorcerer.html
 ---
 
 ## At a glance
@@ -17,7 +16,7 @@ folder: trouped
 
 ## As a Sorcerer
 
-You are a **learned** **magician**, skilled with a *dagger* or *staff*. You must remain *unarmored* to utlize your abilities. You must pick one school of magic in which to specialize.
+You are a **learned** **magician**, skilled with a *dagger* or *staff*. You must remain *unarmored* to utlize your abilities. You must pick one [school of magic](#schools-of-magic) in which to specialize.
 
 ## Starting Kits
 
@@ -29,4 +28,19 @@ Roll 1d6:
 | 3-4 | 1d6 silver pieces, a staff, 1 x Mandrake, 1 x Fly Agaric, and a keepsake     |
 | 5-6 | 1d6 silver pieces, 1 x cat's paw, 1 x Mugwort, 1 x Rue, and a keepsake       |
 
-{% include links.html %}
+## Schools of Magic
+
+Pick one of:
+
+Elementalism
+: Choose one from **air**, **earth**, **fire**, or **water** to manipulate.
+
+Enchantment
+: Sway a creature's *emotions* or *demeanor*.
+
+Mimicry
+: Imitate a creature’s *ability*, *appearance*, or *power*.
+
+[Read more about magic](troupe_doomsday_magic.html).
+
+{% include_relative _includes/troupe_footer.md %}

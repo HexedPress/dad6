@@ -11,11 +11,17 @@ entries:
     - title: Overview
       url: /troupe_overview.html
       output: web
+    - title: Challenges
+      url: /troupe_challenges.html
+      output: web
+    - title: Strain
+      url: /troupe_strain.html
+      output: web
   - title: Doomsday
     output: web
     folderitems:
     - title: Overview
-      url: /trouped_overview.html
+      url: /troupe_doomsday_overview.html
       output: web
   - title: About Do Anything D6
     output: web

@@ -10,5 +10,6 @@ allowed-tags:
   - troupe_core
   - troupe_doomsday
   - examples
+  - magic
 
 # Copyright 2021 Google LLC
