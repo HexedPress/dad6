@@ -15,16 +15,16 @@ The game is built onto the mechanics of the [Do Anything D6](dad6_overview.html)
 Characters are represented by a **Calling**, **Level**, a **Virtue**, and a **Vice**.
 
 Calling
-: The Character's class, a set of lores and crafts that they excel at; [read more about Callings](trouped_callings.html).
+: The Character's class, a set of lores and crafts that they excel at; [read more about Callings](troupe_doomsday_callings.html).
 
 Level
 : A measure of the Character's power; represented by a number, starting at 1.
 
 Virtue
-: An exalted source of motivation; [read more about Virtues](trouped_virtues.html).
+: An exalted source of motivation; [read more about Virtues](troupe_doomsday_virtues.html).
 
 Vice
-: A negative trait; [read more about Vices](trouped_vices.html).
+: A negative trait; [read more about Vices](troupe_doomsday_vices.html).
 
 ## Hero Dice and Hazard Dice
 
@@ -36,19 +36,19 @@ In addition to being the fuel that powers challenges, <mark>HD represents health
 
 ## Challenges
 
-[Challenges](trouped_challenges.html) occur when Characters or Creatures need to roll dice to accomplish something fraught.
+[Challenges](troupe_doomsday_challenges.html) occur when Characters or Creatures need to roll dice to accomplish something fraught.
 
 ### Boons and Banes
 
-When rolling dice in a [challenge](trouped_challenges.html), <mark>results of six or more are boons</mark>. Score as many or more boons as the difficulty of a [challenge](trouped_challenges.html) to pass. If the difficulty of the [challenge](trouped_challenges.html) is not overcome, <mark>for every boon missing, a bane is created</mark>. Banes are consequences of failure.
+When rolling dice in a [challenge](troupe_doomsday_challenges.html), <mark>results of six or more are boons</mark>. Score as many or more boons as the difficulty of a [challenge](troupe_doomsday_challenges.html) to pass. If the difficulty of the [challenge](troupe_doomsday_challenges.html) is not overcome, <mark>for every boon missing, a bane is created</mark>. Banes are consequences of failure.
 
 ## Strain
 
-Any harm, such as physical injury, or hindrance, such as exhaustion, generates strain. [Read more about Strain](trouped_strain.html).
+Any harm, such as physical injury, or hindrance, such as exhaustion, generates strain. [Read more about Strain](troupe_doomsday_strain.html).
 
 ## Doom Dice
 
-**Doom Dice** are bonus dice that can be spent at any time for various effects; they're gained through banking excess boons from [challenges](trouped_challenges.html) or from playing into vices. [Read more about Doom Dice](trouped_doom.html).
+**Doom Dice** are bonus dice that can be spent at any time for various effects; they're gained through banking excess boons from [challenges](troupe_doomsday_challenges.html) or from playing into vices. [Read more about Doom Dice](troupe_doomsday_doom.html).
 
 {% include tip.html content="Read more about [Challenges](troupe_doomsday_challenges.html) next." type="primary" %}
 
